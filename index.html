@@ -8,6 +8,8 @@
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/mobile.css">
     <link rel="stylesheet" media= "screen and (min-width: 1100 px)" href="/css/widescreen.css">
     <link rel="stylesheet" href="/css/style.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
     <title>EdgeLedger Financial | Accounting & Investment</title>
 </head>
 <body id="home">
@@ -122,9 +124,21 @@
                 <input type="submit" value="Send" class="btn btn-dark">
             </form>
         </div>
-        <div class="map">
-
-        </div>
+        <div id='map' style='width: 50vw;' ></div>
     </section>
+    <footer id="main-footer" class="bg-dark text-center py-1">
+        <div class="container">
+            <p>Copyright &copy; 2019, EdgeLedger by Ben, All Rights Reserved</p>
+        </div>
+
+    </footer>
+<script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic2F2YXNlc28iLCJhIjoiY2pybWMzbGY4MGhzYTQ5bnpxcWVheXRibSJ9.9BJ7NdcYW9erveGx1Bd47w';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v9'
+        });
+</script>
 </body>
 </html>
+
