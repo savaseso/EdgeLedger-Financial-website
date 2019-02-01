@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.4;
@@ -150,7 +154,7 @@ p {
     padding: 0 2rem;
     /*overlay*/
     position: absolute;
-    top:60px;
+    top:65px;
     left:0;
     right: 0;
     bottom: 0;
